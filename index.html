@@ -18,7 +18,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-lg">#</span>
                 </div>
-                <input type="text" class="form-control" id="hex" maxlength="6" onkeyup="hexToRgb()">
+                <input type="text" class="form-control" id="hex-first" maxlength="6" onkeyup="hexToRgb()">
                 <div class="valid-feedback">
                     Looks good!
                 </div>
@@ -28,7 +28,45 @@
             </div>
             <br>
             <div class="input-group input-group-lg">
-                <input type="text" class="form-control" id="rgb" placeholder="RGB" readonly>
+                <input type="text" class="form-control" id="rgb-first" placeholder="RGB" readonly>
+            </div>
+        </form>
+    </section>
+    <section>
+        <h4>Rgb To Hex Convert</h4>
+        <form>
+            <label for="hex">Enter a color in Rgb format:</label>
+
+            <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+
+                    <span class="input-group-text" id="inputGroup-sizing-lg">R</span>
+                </div>
+                <input type="text" class="form-control" id="r"  maxlength="3" onkeyup="rgbToHex()">
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">G</span>
+                </div>
+                <input type="text" class="form-control" id="g" maxlength="3" onkeyup="rgbToHex()">
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">B</span>
+                </div>
+                <input type="text" class="form-control" id="b" maxlength="3"  onkeyup="rgbToHex()">
+
+                <!-- <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                    Please provide a valid hex.
+                </div> -->
+            </div>
+            <!-- <div>
+                <button id="convert" onclick="rgbToHex()" >convert</button>
+            </div> -->
+            <br>
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" id="hex-second" placeholder="HEX" readonly>
             </div>
         </form>
     </section>
